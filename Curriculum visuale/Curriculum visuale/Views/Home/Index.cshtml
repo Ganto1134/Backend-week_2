@@ -1,0 +1,30 @@
+﻿@model Curriculum_visuale.Models.CV
+
+<h2>Informazioni Personali</h2>
+<p>Nome: @Model.InformazioniPersonali.Nome</p>
+<p>Cognome: @Model.InformazioniPersonali.Cognome</p>
+<p>Telefono: @Model.InformazioniPersonali.Telefono</p>
+<p>Email: @Model.InformazioniPersonali.Email</p>
+
+<h2>Studi e Formazione</h2>
+@foreach (var studi in Model.StudiEffettuati)
+{
+    <div>
+        <p>Istituto: @studi.Istituto</p>
+        <p>Qualifica: @studi.Qualifica</p>
+        <p>Tipo: @studi.Tipo</p>
+        <p>Dal: @studi.Dal.ToString("dd/MM/yyyy") al @studi.Al.ToString("dd/MM/yyyy")</p>
+    </div>
+}
+
+<h2>Esperienze Professionali</h2>
+@foreach (var esperienza in Model.Impieghi.Esperienze)
+{
+    <div>
+        <p>Azienda: @esperienza.Azienda</p>
+        <p>Job Title: @esperienza.JobTitle</p>
+        <p>Dal: @esperienza.Dal.ToString("dd/MM/yyyy") al @esperienza.Al.ToString("dd/MM/yyyy")</p>
+        <p>Descrizione: @esperienza.Descrizione</p>
+        <p>Compiti: @esperienza.Compiti</p>
+    </div>
+}

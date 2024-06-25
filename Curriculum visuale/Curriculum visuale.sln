@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curriculum visuale", "Curriculum visuale\Curriculum visuale.csproj", "{98BEDC0C-BD77-4EA6-BA61-052BA81EA46D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34BEDEC5-DC28-47D4-9713-613D0C541CE5}"
+	ProjectSection(SolutionItems) = preProject
+		..\Curriculum\Curriculum\CV.cs = ..\Curriculum\Curriculum\CV.cs
+		..\Curriculum\Curriculum\Esperienza.cs = ..\Curriculum\Curriculum\Esperienza.cs
+		..\Curriculum\Curriculum\Impiego.cs = ..\Curriculum\Curriculum\Impiego.cs
+		..\Curriculum\Curriculum\InformazioniPersonali.cs = ..\Curriculum\Curriculum\InformazioniPersonali.cs
+		..\Curriculum\Curriculum\Studi.cs = ..\Curriculum\Curriculum\Studi.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98BEDC0C-BD77-4EA6-BA61-052BA81EA46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BEDC0C-BD77-4EA6-BA61-052BA81EA46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BEDC0C-BD77-4EA6-BA61-052BA81EA46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BEDC0C-BD77-4EA6-BA61-052BA81EA46D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0602F1A3-CF4D-4408-BED7-64C647D5FA40}
+	EndGlobalSection
+EndGlobal
