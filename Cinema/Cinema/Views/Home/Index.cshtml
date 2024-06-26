@@ -1,0 +1,53 @@
+﻿@model List<Cinema.Models.Sala>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multisala</title>
+</head>
+<body>
+    <h1>Multisala</h1>
+
+    <form asp-action="BookTicket" method="post">
+        <label for="firstName">Nome:</label>
+        <input type="text" id="firstName" name="firstName" required /><br />
+
+        <label for="lastName">Cognome:</label>
+        <input type="text" id="lastName" name="lastName" required /><br />
+
+        <label for="sala">Sala:</label>
+        <select id="sala" name="salaId" required>
+            @foreach (var sala in Model)
+            {
+                <option value="@sala.Id">@sala.Name</option>
+            }
+        </select><br />
+
+        <label for="isReduced">Ridotto:</label>
+        <input type="checkbox" id="isReduced" name="isReduced" /><br />
+
+        <button type="submit">Prenota</button>
+    </form>
+
+    <h2>Biglietti Venduti</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sala</th>
+                <th>Totale Venduti</th>
+                <th>Ridotti Venduti</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sala in Model)
+            {
+                <tr>
+                    <td>@sala.Name</td>
+                    <td>@sala.SoldTickets</td>
+                    <td>@sala.ReducedTickets</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
